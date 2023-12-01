@@ -14,4 +14,4 @@ select
     concat(s.lastname ,', ' , s.firstname) as supervisornamelastfirst,
     concat(s.firstname  , ' ' , s.lastname) as supervisornamefirstlast
 from stg_employees e
-    left join stg_supervisors s on e.reportsto = s.employeeid
+    left join stg_supervisors s on e.reportsto = s.employeeid 
